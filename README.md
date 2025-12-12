@@ -11,9 +11,13 @@ Incluye dos datasets (`sectores.csv` y `municipios.csv`) y un notebook `ipynb` c
 ## 📁 Estructura del repositorio
 
 ├── Ej_OpenAI.ipynb # Notebook con el código completo
+
 ├── sectores.csv # Datos de sectores laborales
+
 ├── municipios.csv # Datos de municipios y direcciones
+
 ├── private.env # Variables de entorno (NO subir claves reales)
+
 └── README.md # Este archivo
 
 ⚠️ **IMPORTANTE:** El archivo `private.env` debe contener SOLO la variable `OPENAI_API_KEY`, pero *sin clave real* al subirlo a GitHub, pero os sirve para probar en local.
