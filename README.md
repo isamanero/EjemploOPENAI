@@ -74,7 +74,7 @@ git clone <url_del_repo>
 2️⃣ Instalar dependencias
 
 3️⃣ Crear archivo de entorno
-Rellenar el archivo llamado private.env, para trabajar en local, con tu
+--> Rellenar el archivo llamado private.env, para trabajar en local, con tu
 OPENAI_API_KEY=tu_clave_aquí
 Y cárgalo en Python:
 
