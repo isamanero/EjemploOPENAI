@@ -12,9 +12,9 @@ Incluye dos datasets (`sectores.csv` y `municipios.csv`) y un notebook `ipynb` c
 
 ├── Ej_OpenAI.ipynb # Notebook con el código completo
 
-├── sectores.csv # Datos de sectores laborales
+├── sectores.csv # Datos de sectores laborales (Ficticio, modificado)
 
-├── municipios.csv # Datos de municipios y direcciones
+├── municipios.csv # Datos de municipios y direcciones (Ficticio, generado con ChatGPT)
 
 ├── private.env # Variables de entorno (NO subir claves reales)
 
