@@ -14,16 +14,11 @@ Incluye dos datasets (`sectores.csv` y `municipios.csv`) y un notebook `ipynb` c
 ├── sectores.csv # Datos de sectores laborales
 ├── municipios.csv # Datos de municipios y direcciones
 ├── private.env # Variables de entorno (NO subir claves reales)
-├── requirements.txt # Dependencias del proyecto
 └── README.md # Este archivo
 
-yaml
-Copiar código
-
-⚠️ **IMPORTANTE:** El archivo `private.env` debe contener SOLO la variable `OPENAI_API_KEY`, pero *sin clave real* al subirlo a GitHub.
+⚠️ **IMPORTANTE:** El archivo `private.env` debe contener SOLO la variable `OPENAI_API_KEY`, pero *sin clave real* al subirlo a GitHub, pero os sirve para probar en local.
 
 ---
-
 ## 🎯 Objetivo del proyecto
 
 Este repositorio enseña cómo usar OpenAI para:
@@ -68,86 +63,24 @@ Esto permite análisis geográficos más potentes.
 
 ## 🔧 Instalación
 
-### 1️⃣ Clonar el repositorio
+### 1️⃣ Clonar el repositorio desde la terminal o descargar los archivos:
 
-```bash
 git clone <url_del_repo>
-cd <nombre_del_repo>
-2️⃣ Instalar dependencias
-bash
-Copiar código
-pip install -r requirements.txt
-3️⃣ Crear archivo de entorno
-Crea un archivo llamado private.env (NO subas tu clave real a GitHub):
 
-ini
-Copiar código
+2️⃣ Instalar dependencias
+
+3️⃣ Crear archivo de entorno
+Rellenar el archivo llamado private.env, para trabajar en local, con tu
 OPENAI_API_KEY=tu_clave_aquí
 Y cárgalo en Python:
 
-python
-Copiar código
-from dotenv import load_dotenv
-load_dotenv("private.env")
-💡 Ejemplo de flujo dentro del notebook
-🔹 Cargar datos
-python
-Copiar código
-wt = pd.read_csv("sectores.csv")
-wt_muni = pd.read_csv("municipios.csv")
-🔹 Construir el prompt
-python
-Copiar código
-prompt = f"""
-Clasifica los siguientes trabajos en una categoría:
-{lista_trabajos}
-"""
-🔹 Llamar a la API de OpenAI
-python
-Copiar código
-respuesta = client.chat.completions.create(
-    model="gpt-4o-mini",
-    messages=[{"role": "user", "content": prompt}],
-    response_format={"type": "json_object"}
-)
-🔹 Convertir la respuesta a diccionario
-python
-Copiar código
-resultados = json.loads(respuesta.choices[0].message.content)
-🔹 Crear nuevas columnas
-python
-Copiar código
-wt["Sector_IA"] = wt["sector"].map(resultados)
-📊 Visualización (adelanto de módulo 3)
-🔹 Frecuencia de municipios
-python
-Copiar código
-plt.barh(frecuencias.index, frecuencias.values, color='red')
-🔹 Frecuencia por CCAA
-python
-Copiar código
-plt.barh(frecuencias.index, frecuencias.values, color='lightgreen')
-🔐 Seguridad: no expongas tu clave
-Para evitar filtrarla accidentalmente:
+## 👩‍💻 Autoría y uso
 
-➡️ Asegúrate de que tu .gitignore contiene:
-
-arduino
-Copiar código
-*.env
-private.env
-➡️ Revoca tu API Key si se subió por error.
-➡️ Crea una nueva desde: https://platform.openai.com/
-
-👩‍💻 Autoría y uso
-Proyecto creado como ejemplo formativo para:
+Proyecto creado por Isabel Mañero como ejemplo formativo para Adalab:
 
 Integración con la API de OpenAI
-
 Limpieza y preparación de datasets
-
 Clasificación automatizada
-
 Visualización básica
 
-Puedes modificarlo, reutilizarlo o ampliarlo a tu gusto.
+Puedes modificarlo, reutilizarlo o ampliarlo a tu gusto. Cualquier sugerencia es bienvenida 💜
