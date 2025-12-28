@@ -6,7 +6,7 @@ Proyecto demostrativo donde utilizamos la API de **OpenAI** para clasificar:
 
 Incluye dos datasets (`sectores.csv` y `municipios.csv`) y un notebook `ipynb` con todo el proceso explicado paso a paso.
 
-## 💰 **Coste de uso**  
+## 💰 **Importante --> Coste de uso**  
 Este proyecto utiliza la API de OpenAI.  
 - OpenAI ofrece **tokens gratuitos limitados** al crear una cuenta.  
 - Después de agotar esos tokens, **el uso de la API es de pago**, según el número de tokens procesados.
