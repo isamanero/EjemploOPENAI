@@ -15,7 +15,7 @@ Incluye dos datasets (`sectores.csv` y `municipios.csv`) y un notebook `ipynb` c
 ├── files # Carpeta con los datasets ficticios
      ├── sectores.csv # Datos de sectores laborales (Ficticio, modificado)
      └── municipios.csv # Datos de municipios y direcciones (Ficticio, generado con ChatGPT)
-|
+
 ├── .gitignore # Archivo que ignora archivos sensibles (.env, dónde almacenar OPEN_AI_KEY)
 
 └── README.md # Este archivo
