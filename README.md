@@ -6,17 +6,25 @@ Proyecto demostrativo donde utilizamos la API de **OpenAI** para clasificar:
 
 Incluye dos datasets (`sectores.csv` y `municipios.csv`) y un notebook `ipynb` con todo el proceso explicado paso a paso.
 
+## 💰 **Importante --> Coste de uso**  
+Este proyecto utiliza la API de OpenAI.  
+- OpenAI ofrece **tokens gratuitos limitados** al crear una cuenta.  
+- Después de agotar esos tokens, **el uso de la API es de pago**, según el número de tokens procesados.
+
+Buscar información directamente en su web e informarse previamente
 ---
 
 ## 📁 Estructura del repositorio
 
 ├── Ej_OpenAI.ipynb # Notebook con el código completo
 
-├── sectores.csv # Datos de sectores laborales (Ficticio, modificado)
+├── files # Carpeta con los datasets ficticios
 
-├── municipios.csv # Datos de municipios y direcciones (Ficticio, generado con ChatGPT)
+     ├── sectores.csv # Datos de sectores laborales (Ficticio, modificado)
+     
+     └── municipios.csv # Datos de municipios y direcciones (Ficticio, generado con ChatGPT)
 
-├── .gitignore # Archivo que recoge archivos .env (dónde almacenar las API_KEY para probar el proyecto
+├── .gitignore # Archivo que ignora archivos sensibles (.env, dónde almacenar OPEN_AI_KEY)
 
 └── README.md # Este archivo
 
@@ -64,12 +72,6 @@ Esto permite análisis geográficos más potentes.
 | Visualización | `matplotlib` |
 
 ---
-## 💰 **Coste de uso**  
-Este proyecto utiliza la API de OpenAI.  
-- OpenAI ofrece **tokens gratuitos limitados** al crear una cuenta.  
-- Después de agotar esos tokens, **el uso de la API es de pago**, según el número de tokens procesados.
-
-Buscar información directamente en su web e informarse previamente.
 
 ## 🔧 Instalación
 
