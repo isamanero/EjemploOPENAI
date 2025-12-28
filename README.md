@@ -11,10 +11,13 @@ Incluye dos datasets (`sectores.csv` y `municipios.csv`) y un notebook `ipynb` c
 ## 📁 Estructura del repositorio
 
 ├── Ej_OpenAI.ipynb # Notebook con el código completo
+
 ├── files # Carpeta con los datasets ficticios
-│ ├── sectores.csv # Datos de sectores laborales (Ficticio, modificado)
-│ └── municipios.csv # Datos de municipios y direcciones (Ficticio, generado con ChatGPT)
+     ├── sectores.csv # Datos de sectores laborales (Ficticio, modificado)
+     └── municipios.csv # Datos de municipios y direcciones (Ficticio, generado con ChatGPT)
+|
 ├── .gitignore # Archivo que ignora archivos sensibles (.env, dónde almacenar OPEN_AI_KEY)
+
 └── README.md # Este archivo
 
 ⚠️ **IMPORTANTE:** El archivo `private.env` debe contener SOLO la variable `OPENAI_API_KEY`.
