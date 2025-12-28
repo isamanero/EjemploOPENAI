@@ -16,11 +16,11 @@ Incluye dos datasets (`sectores.csv` y `municipios.csv`) y un notebook `ipynb` c
 
 ├── municipios.csv # Datos de municipios y direcciones (Ficticio, generado con ChatGPT)
 
-├── private.env # Variables de entorno (NO subir claves reales)
+├── .gitignore # Archivo que recoge archivos .env (dónde almacenar las API_KEY para probar el proyecto
 
 └── README.md # Este archivo
 
-⚠️ **IMPORTANTE:** El archivo `private.env` debe contener SOLO la variable `OPENAI_API_KEY`, pero *sin clave real* al subirlo a GitHub, pero os sirve para probar en local.
+⚠️ **IMPORTANTE:** El archivo `private.env` debe contener SOLO la variable `OPENAI_API_KEY`.
 
 ---
 ## 🎯 Objetivo del proyecto
@@ -64,6 +64,12 @@ Esto permite análisis geográficos más potentes.
 | Visualización | `matplotlib` |
 
 ---
+## 💰 **Coste de uso**  
+Este proyecto utiliza la API de OpenAI.  
+- OpenAI ofrece **tokens gratuitos limitados** al crear una cuenta.  
+- Después de agotar esos tokens, **el uso de la API es de pago**, según el número de tokens procesados.
+
+Buscar información directamente en su web e informarse previamente.
 
 ## 🔧 Instalación
 
@@ -75,7 +81,7 @@ git clone <url_del_repo>
 
 3️⃣ Crear archivo de entorno
 --> Rellenar el archivo llamado private.env, para trabajar en local, con tu
-OPENAI_API_KEY=tu_clave_aquí
+OPENAI_API_KEY=tu_clave_aquí (Muy fácil de conseguir en la Web OpenAI)
 Y cárgalo en Python:
 
 ## 👩‍💻 Autoría y uso
